@@ -36,6 +36,12 @@ jobs:
           'https://api.oksusu.site/api/v1/metadata/version' \
           -H 'accept: application/json'
 
+      - name: alignlab health check
+        run: |
+          curl -X 'GET' \
+          'https://api.alignlab.site/api/v1/health' \
+          -H 'accept: application/json'
+
       # ===================================================================
       # Health Check End
       # ===================================================================
