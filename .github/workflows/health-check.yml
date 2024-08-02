@@ -47,6 +47,12 @@ jobs:
           curl -X 'GET' \
           'https://readys.link/api/v1/health' \
           -H 'accept: application/json'         
+      
+      - name: github health check
+        run: |
+          curl -X 'GET' \
+          'https://github.com/DongGeon0908?tab=repositories' \
+          -H 'accept: application/json'
 
       # ===================================================================
       # Health Check End
