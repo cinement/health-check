@@ -21,7 +21,7 @@ If you want to add a health-check, add it according to the following spec.
       - name: alignlab health check
         run: |
           curl -X 'GET' \
-          'https://api.alignlab.site/api/v1/health' \
+          'https://api.cinement.biz/api/v1/health' \
           -H 'accept: application/json'
 ```
 
