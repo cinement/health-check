@@ -30,7 +30,7 @@ jobs:
       # Health Check Start
       # ===================================================================
 
-      - name: alignlab health check
+      - name: cinement health check
         run: |
           curl -X 'GET' \
           'https://api.cinement.biz/api/v1/health' \
