@@ -30,18 +30,12 @@ jobs:
       # Health Check Start
       # ===================================================================
       
-      - name: alignlab health check
+      - name: cinement health check
         run: |
           curl -X 'GET' \
-          'https://api.alignlab.site/api/v1/health' \
+          'https://api.cinement.biz/api/v1/health' \
           -H 'accept: application/json'
 
-      - name: readys.link health check
-        run: |
-          curl -X 'GET' \
-          'https://readys.link/api/v1/health' \
-          -H 'accept: application/json'         
-      
       - name: github health check
         run: |
           curl -X 'GET' \
